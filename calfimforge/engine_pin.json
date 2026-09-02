@@ -1,0 +1,11 @@
+{
+  "engine": "graphforge",
+  "github": "martialsystems/graphforge",
+  "track": "main",
+  "remote": "origin",
+  "min_version": "0.6.0",
+  "policy": "report_only",
+  "local_candidates": ["~/graphforge"],
+  "require_product_laws": true,
+  "note": "Five refuse laws: Dunn/Straub/Manaster 2020 identity; published GRIDIDs only; no Grand Calumet/INFIP fallback; no TRI five-row; empty overlap is stop. Science e11fce4. Verify-before-done is the finish gate."
+}

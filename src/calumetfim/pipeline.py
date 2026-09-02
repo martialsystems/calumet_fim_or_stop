@@ -29,6 +29,14 @@ from calumetfim.usgs import pin_pairs, require_published_gridid
 from calumetfim.wbd import require_library_huc
 from calumetfim.window import overlap_counts, read_window
 
+from calfimforge.gate import (
+    require_gridid,
+    require_overlap,
+    require_study,
+    require_substitute,
+    require_tri,
+)
+
 
 def _write_json(path: Path, obj: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -38,6 +46,12 @@ def _write_json(path: Path, obj: dict) -> None:
 
 def stage0_fixture(log_dir: Path, *, fixtures: Path | None = None) -> dict:
     require_published_gridid(FLOOD_GRIDID)
+    require_gridid(published_gridid=True, interpolated=False, thread_id="fixture.gridid")
+    require_study(
+        dunn_straub_manaster=True, zip_is_lcalumeil=True, thread_id="fixture.study"
+    )
+    require_substitute(thread_id="fixture.sub")
+    require_tri(thread_id="fixture.tri")
     pin = pin_pairs()
     hucs = require_library_huc(live=False)
     fx = fixtures or Path(__file__).resolve().parents[2] / "tests" / "fixtures"
@@ -45,6 +59,7 @@ def stage0_fixture(log_dir: Path, *, fixtures: Path | None = None) -> dict:
     identity = prove_sciencebase_item(item)
     prove_fgdc_metadata((fx / USGS_METADATA_NAME).read_text(encoding="utf-8"))
     blobs = arrays()
+    require_overlap(overlap_empty=False, paint_iou=True, thread_id="fixture.overlap")
     table = overlap_table(
         wet=blobs["wet"],
         usgs=blobs["usgs"],
@@ -108,6 +123,9 @@ def run_live(
     fetch: bool = True,
 ) -> dict:
     require_published_gridid(FLOOD_GRIDID)
+    require_gridid(published_gridid=True, interpolated=False, thread_id="live.gridid")
+    require_substitute(thread_id="live.sub")
+    require_tri(thread_id="live.tri")
     pin = pin_pairs()
     log_dir.mkdir(parents=True, exist_ok=True)
     if fetch:
@@ -119,6 +137,9 @@ def run_live(
         meta = fetch_fgdc(raw_dir)
         prove_fgdc_metadata(meta.read_text(encoding="utf-8"))
         prove_shapefile_dbf(extract_root)
+        require_study(
+            dunn_straub_manaster=True, zip_is_lcalumeil=True, thread_id="live.study"
+        )
         wbd = require_library_huc(live=True)
     else:
         identity = {"title": "fixture-bypass"}
@@ -133,6 +154,12 @@ def run_live(
     zone, _, _ = read_window(paths["zone_class"])
     p_cal, _, _ = read_window(paths["p_calibrated"])
     counts = overlap_counts(hand, zone, p_cal)
+    empty = bool(counts["overlap_empty"])
+    require_overlap(
+        overlap_empty=empty,
+        paint_iou=not empty,
+        thread_id="live.overlap",
+    )
     stop_sentence = (
         f"SIR {SIR} is Dunn/Straub/Manaster 2020, 24 published profiles, "
         f"gages {GAGE_MUNSTER} and 05536290. Those gages are HUC "

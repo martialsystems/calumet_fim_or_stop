@@ -6,7 +6,7 @@ SIR 2020-5074 is Dunn/Straub/Manaster 2020, 24 published profiles, gages 0553619
 
 Stage 0 proved the GIS (`lcalumeil_shapefile.zip`, data DOI 10.5066/P99L14DN). NWS SHLI2 minor flood 16.00 ft is not a paint surface: GRIDID 11 is 16.32 ft. Frozen calibrated P is `3a5dcfd`. The 8-mile library runs from 0.4 mile downstream of Munster toward South Holland.
 
-The 8-mile library is the west-flowing Little Calumet from 0.4 mile downstream of Munster toward South Holland. USS Gary is east of that clip, on 04040001. Live WBD at the two gages is Chicago 07120003 (1,590.16 km²). Do not restamp Calumet D.
+Little Calumet in the SIR title is the Lansing to South Holland reach in HUC 07120003, not the Galien HUC 04040001 that was trained. USS Gary is east of that clip, on 04040001. Live WBD at the two gages is Chicago 07120003 (1,590.16 km²). Do not restamp Calumet D. Do not freeze a 07120003 HAND just to finish this IoU.
 
 P(sfha | hydro) is map-completion, not water at 16.32 ft. The HAND mask is a 30 m bathtub. The USGS polygon is not a FIRM.
 
@@ -46,5 +46,6 @@ Live exit 2 is the empty-overlap stop. Do not use stock `/usr/bin/python3 -m pyt
 | [AGENTS.md](AGENTS.md) | Agent rules |
 | [CHECKLIST.md](CHECKLIST.md) | Operator list |
 | `src/calumetfim/` | Study pin, published profiles, window clip, claims |
+| `calfimforge/` | GraphForge pin: five refuse laws |
 
 MIT. Martial Systems LLC.

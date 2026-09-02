@@ -1,6 +1,6 @@
 # Methodology: Calumet HAND vs USGS SIR 2020-5074
 
-Locked contract for `calumet_fim_or_stop`. Freeze Calumet HAND and calibrated P. Do not recompute HAND. Do not train. Do not paint a HUC.
+Locked contract for `calumet_fim_or_stop`. Freeze Calumet HAND and calibrated P. Do not recompute HAND. Do not train. Do not paint a HUC. Science `e11fce4`. GraphForge pin `calfimforge/` holds five refuse laws.
 
 ## Reach and window
 

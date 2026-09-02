@@ -8,6 +8,7 @@
         "src/**",
         "tests/**",
         "scripts/**",
+        "calfimforge/**",
         "requirements.txt",
         "vbd.runtime.json"
       ]
@@ -17,6 +18,12 @@
       "argv": [".venv/bin/python", "scripts/run_fixture.py", "logs/stage0_fixture"],
       "timeout_s": 60,
       "paths": ["src/**", "scripts/**", "tests/**"]
+    },
+    {
+      "id": "calfimforge-sanity",
+      "argv": [".venv/bin/python", "calfimforge/scripts/sanity_calfimforge.py"],
+      "timeout_s": 60,
+      "paths": ["calfimforge/**", "tests/test_calfimforge_laws.py"]
     }
   ]
 }
