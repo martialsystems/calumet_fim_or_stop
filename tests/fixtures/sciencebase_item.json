@@ -1,0 +1,51 @@
+{
+  "id": "5ec58ae882ce476925ebbbf5",
+  "title": "Flood-Inundation Shapefiles for Little Calumet River from Lansing to South Holland, Illinois, 2020",
+  "citation": "Dunn, A.P., Straub, T.D., and Manaster, A.E., 2020, Geospatial Datasets for the Flood-Inundation Study of Little Calumet River from Lansing to South Holland, Illinois, 2020: U.S. Geological Survey data release, https://doi.org/10.5066/P99L14DN.",
+  "summary": "Digital flood-inundation maps for about an 8-mile reach of the Little Calumet River, Illinois, were created by the U.S. Geological Survey (USGS) in cooperation with the U.S. Army Corps of Engineers. The flood-inundation maps, which can be accessed through the USGS Flood Inundation Mapping Program website at https://www.usgs.gov/mission-areas/water-resources/science/flood-inundation-mapping-fim-program, depict estimates of the areal extent and depth of flooding corresponding to selected water levels (stages) at three USGS streamgages: Little Calumet River at South Holland, Illinois (USGS station 05536290); Little Calumet River at Munster, Indiana (USGS station 05536195); and Thorn Creek at Thornton, Illinois (USGS station 05536275). [...]",
+  "webLinks": [
+    {
+      "type": "Related_Primary_Publication",
+      "typeLabel": "Related Primary Publication",
+      "uri": "https://doi.org/10.3133/sir20205074",
+      "title": "Flood-Inundation Maps for the Little Calumet River from Lansing to South Holland, Illinois, 2020",
+      "hidden": false
+    }
+  ],
+  "files": [
+    {
+      "name": "lcalumeil_shapefile.zip",
+      "size": 20628717
+    },
+    {
+      "name": "FIMI_shapefile_metadata_lcalumeil.xml",
+      "size": 19933
+    }
+  ],
+  "spatial": {
+    "boundingBox": {
+      "minX": -87.6128,
+      "maxX": -87.5204,
+      "minY": 41.5621,
+      "maxY": 41.6244
+    }
+  },
+  "contacts": [
+    {
+      "name": "Central Midwest Water Science Center",
+      "type": "Point of Contact"
+    },
+    {
+      "name": "Andrew P Dunn",
+      "type": "Originator"
+    },
+    {
+      "name": "Timothy D Straub",
+      "type": "Originator"
+    },
+    {
+      "name": "Adam E Manaster",
+      "type": "Originator"
+    }
+  ]
+}

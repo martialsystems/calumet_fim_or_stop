@@ -1,0 +1,90 @@
+{
+  "stage": "A",
+  "question": "Does the Calumet HAND bathtub, or P(sfha | hydro) >= t, sit in the same neighborhood as USGS SIR 2020-5074 on a Munster to South Holland window?",
+  "fixture": false,
+  "gage_id": "05536195",
+  "sir": "2020-5074",
+  "authors": [
+    "Dunn",
+    "Straub",
+    "Manaster"
+  ],
+  "year": 2020,
+  "huc8_hand": "04040001",
+  "huc8_library": "07120003",
+  "parent_hand_sha": "a7dcd81",
+  "parent_p_sha": "3a5dcfd",
+  "p_is_forecast": false,
+  "hand_is_firm": false,
+  "usgs_is_firm": false,
+  "interpolated": false,
+  "tri_five_row": false,
+  "identity": {
+    "title": "Flood-Inundation Shapefiles for Little Calumet River from Lansing to South Holland, Illinois, 2020",
+    "citation": "Dunn, A.P., Straub, T.D., and Manaster, A.E., 2020, Geospatial Datasets for the Flood-Inundation Study of Little Calumet River from Lansing to South Holland, Illinois, 2020: U.S. Geological Survey data release, https://doi.org/10.5066/P99L14DN.",
+    "zip_name": "lcalumeil_shapefile.zip",
+    "sir": "2020-5074",
+    "data_doi": "10.5066/P99L14DN"
+  },
+  "wbd": {
+    "05536195": {
+      "huc8": "07120003",
+      "name": "Chicago",
+      "states": "IL,IN",
+      "areasqkm": 1590.16,
+      "lonlat": [
+        -87.5222222,
+        41.5775
+      ],
+      "live": true
+    },
+    "05536290": {
+      "huc8": "07120003",
+      "name": "Chicago",
+      "states": "IL,IN",
+      "areasqkm": 1590.16,
+      "lonlat": [
+        -87.5975833,
+        41.60702778
+      ],
+      "live": true
+    }
+  },
+  "pairs": {
+    "flood": {
+      "grid_id": 11,
+      "south_holland_stage_ft": 16.32,
+      "south_holland_elev_ft": 591.0,
+      "munster_stage_ft": 14.66,
+      "munster_elev_ft": 595.0,
+      "profile": "25p01_il",
+      "nws_minor_ft": 16.0,
+      "gap_ft": 0.32
+    },
+    "high": {
+      "grid_id": 24,
+      "south_holland_stage_ft": 24.32,
+      "south_holland_elev_ft": 599.0,
+      "munster_stage_ft": 19.66,
+      "munster_elev_ft": 600.0,
+      "profile": "500p12_il"
+    }
+  },
+  "sibling_sha": {
+    "hand": "8e70530e68589892c9779e505ced1cc249ccced91938fbfc8883b26f6607d3dc",
+    "p_calibrated": "ee14fa6c47f0f5a475650430de87d261f45deac51540017c6927b99cf1dd9f55",
+    "zone_class": "36f293d85250b651672f91b5472a3c98769af1541a49765d8dd235aa45086584",
+    "transform": "81748d4137cb2e161f4e875699d62a5b594a4141b5b6dc73eacd2af136d7e808"
+  },
+  "window": {
+    "n_window_cells": 69596,
+    "n_hand_finite": 0,
+    "n_zone_mapped": 0,
+    "n_p_finite": 0,
+    "window_is_huc": false,
+    "overlap_empty": true
+  },
+  "overlap_empty": true,
+  "leftover": "SIR 2020-5074 is Dunn/Straub/Manaster 2020, 24 published profiles, gages 05536195 and 05536290. Those gages are HUC 07120003. Frozen HAND a7dcd81 is HUC 04040001. Finite HAND cells on the Munster to South Holland window: 0. Stop.",
+  "stopped": true
+}
