@@ -2,7 +2,7 @@
 
 Does the Calumet HAND bathtub, or P(sfha | hydro) >= t, sit in the same neighborhood as USGS SIR 2020-5074 on a Munster to South Holland window?
 
-SIR 2020-5074 is Dunn/Straub/Manaster 2020, 24 published profiles, gages 05536195 and 05536290. Those gages are HUC 07120003. Frozen HAND a7dcd81 is HUC 04040001. Finite HAND cells on the Munster to South Holland window: 0. Stop.
+SIR 2020-5074 is Dunn/Straub/Manaster 2020, 24 published profiles, gages 05536195 and 05536290. Those gages are HUC 07120003. Frozen HAND a7dcd81 is HUC 04040001. Finite HAND cells on the Munster to South Holland window: 0. Stop. Stage A `da78b55`. Stage A `da78b55`.
 
 Stage 0 proved the GIS (`lcalumeil_shapefile.zip`, data DOI 10.5066/P99L14DN). NWS SHLI2 minor flood 16.00 ft is not a paint surface: GRIDID 11 is 16.32 ft. Frozen calibrated P is `3a5dcfd`. The 8-mile library runs from 0.4 mile downstream of Munster toward South Holland.
 
