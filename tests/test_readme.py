@@ -22,8 +22,9 @@ def test_readme_opens_with_the_question() -> None:
     assert PARENT_P_SHA in text
     assert "lcalumeil_shapefile.zip" in text
     assert "16.32" in text
-    assert "Open_the_research_console-2e7d32" in text
-    assert "martialsystems.github.io/indiana_wx_pages" in text
+    assert "Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3" in text
+    assert "Open_the_research_console" not in text
+    assert "66b896b0a4a0b8cba2b478aef64312f3" in text
     assert "Calumet floodplain completion" in text
     assert "calumet__flood__completion" not in text
     assert "Parent: [![" not in text
