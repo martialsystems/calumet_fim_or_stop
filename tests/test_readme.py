@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from calumetfim.claims import scan_text
-from calumetfim.config import INDEX_GIST, PARENT_HAND_SHA, PARENT_P_SHA, QUESTION, SIR
+from calumetfim.config import PARENT_HAND_SHA, PARENT_P_SHA, QUESTION, SIR
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -22,7 +22,11 @@ def test_readme_opens_with_the_question() -> None:
     assert PARENT_P_SHA in text
     assert "lcalumeil_shapefile.zip" in text
     assert "16.32" in text
-    assert INDEX_GIST.split("/")[-1] in text
+    assert "Open_the_research_console-2e7d32" in text
+    assert "martialsystems.github.io/indiana_wx_pages" in text
+    assert "Calumet floodplain completion" in text
+    assert "calumet__flood__completion" not in text
+    assert "Parent: [![" not in text
     assert "nwm_ana_2025_26" not in text
     assert scan_text(text) == []
     assert "\u2014" not in text
