@@ -10,9 +10,9 @@ Little Calumet in the SIR title is the Lansing to South Holland reach in HUC 071
 
 P(sfha | hydro) is map-completion, not water at 16.32 ft. The HAND mask is a 30 m bathtub. The USGS polygon is not a FIRM.
 
-Frozen parents: https://github.com/martialsystems/calumet_flood_completion (`a7dcd81` HAND, `3a5dcfd` calibrated P).
+Frozen parents: [![calumet_flood_completion](https://img.shields.io/badge/calumet__flood__completion-2e7d32?style=for-the-badge)](https://github.com/martialsystems/calumet_flood_completion) (`a7dcd81` HAND, `3a5dcfd` calibrated P).
 
-Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3
+[![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
 
 | Quantity | Value |
 |----------|------:|
